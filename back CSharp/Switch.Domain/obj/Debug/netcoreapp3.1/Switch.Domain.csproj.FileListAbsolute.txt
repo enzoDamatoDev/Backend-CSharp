@@ -1,0 +1,10 @@
+D:\enzod\meus\back c#\back CSharp\Switch.Domain\bin\Debug\netcoreapp3.1\Switch.Domain.deps.json
+D:\enzod\meus\back c#\back CSharp\Switch.Domain\bin\Debug\netcoreapp3.1\Switch.Domain.dll
+D:\enzod\meus\back c#\back CSharp\Switch.Domain\bin\Debug\netcoreapp3.1\Switch.Domain.pdb
+D:\enzod\meus\back c#\back CSharp\Switch.Domain\obj\Debug\netcoreapp3.1\Switch.Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\enzod\meus\back c#\back CSharp\Switch.Domain\obj\Debug\netcoreapp3.1\Switch.Domain.AssemblyInfoInputs.cache
+D:\enzod\meus\back c#\back CSharp\Switch.Domain\obj\Debug\netcoreapp3.1\Switch.Domain.AssemblyInfo.cs
+D:\enzod\meus\back c#\back CSharp\Switch.Domain\obj\Debug\netcoreapp3.1\Switch.Domain.csproj.CoreCompileInputs.cache
+D:\enzod\meus\back c#\back CSharp\Switch.Domain\obj\Debug\netcoreapp3.1\Switch.Domain.dll
+D:\enzod\meus\back c#\back CSharp\Switch.Domain\obj\Debug\netcoreapp3.1\Switch.Domain.pdb
+D:\enzod\meus\back c#\back CSharp\Switch.Domain\obj\Debug\netcoreapp3.1\Switch.Domain.csproj.AssemblyReference.cache

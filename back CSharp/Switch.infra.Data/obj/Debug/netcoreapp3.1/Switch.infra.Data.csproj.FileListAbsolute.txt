@@ -1,0 +1,17 @@
+D:\enzod\meus\back c#\back CSharp\Switch.infra.Data\bin\Debug\netcoreapp3.1\Switch.infra.Data.deps.json
+D:\enzod\meus\back c#\back CSharp\Switch.infra.Data\bin\Debug\netcoreapp3.1\Switch.infra.Data.runtimeconfig.json
+D:\enzod\meus\back c#\back CSharp\Switch.infra.Data\bin\Debug\netcoreapp3.1\Switch.infra.Data.runtimeconfig.dev.json
+D:\enzod\meus\back c#\back CSharp\Switch.infra.Data\bin\Debug\netcoreapp3.1\Switch.infra.Data.dll
+D:\enzod\meus\back c#\back CSharp\Switch.infra.Data\bin\Debug\netcoreapp3.1\Switch.infra.Data.pdb
+D:\enzod\meus\back c#\back CSharp\Switch.infra.Data\bin\Debug\netcoreapp3.1\Switch.Domain.dll
+D:\enzod\meus\back c#\back CSharp\Switch.infra.Data\bin\Debug\netcoreapp3.1\Switch.Domain.pdb
+D:\enzod\meus\back c#\back CSharp\Switch.infra.Data\obj\Debug\netcoreapp3.1\Switch.infra.Data.csproj.AssemblyReference.cache
+D:\enzod\meus\back c#\back CSharp\Switch.infra.Data\obj\Debug\netcoreapp3.1\Switch.infra.Data.GeneratedMSBuildEditorConfig.editorconfig
+D:\enzod\meus\back c#\back CSharp\Switch.infra.Data\obj\Debug\netcoreapp3.1\Switch.infra.Data.AssemblyInfoInputs.cache
+D:\enzod\meus\back c#\back CSharp\Switch.infra.Data\obj\Debug\netcoreapp3.1\Switch.infra.Data.AssemblyInfo.cs
+D:\enzod\meus\back c#\back CSharp\Switch.infra.Data\obj\Debug\netcoreapp3.1\Switch.infra.Data.csproj.CoreCompileInputs.cache
+D:\enzod\meus\back c#\back CSharp\Switch.infra.Data\obj\Debug\netcoreapp3.1\Switch.infra.Data.csproj.CopyComplete
+D:\enzod\meus\back c#\back CSharp\Switch.infra.Data\obj\Debug\netcoreapp3.1\Switch.infra.Data.dll
+D:\enzod\meus\back c#\back CSharp\Switch.infra.Data\obj\Debug\netcoreapp3.1\Switch.infra.Data.pdb
+D:\enzod\meus\back c#\back CSharp\Switch.infra.Data\obj\Debug\netcoreapp3.1\Switch.infra.Data.genruntimeconfig.cache
+D:\enzod\meus\back c#\back CSharp\Switch.infra.Data\bin\Debug\netcoreapp3.1\Config\UsuarioConfiguration.cs

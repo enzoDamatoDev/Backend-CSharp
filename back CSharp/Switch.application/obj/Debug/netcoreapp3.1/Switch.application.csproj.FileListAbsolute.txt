@@ -1,0 +1,10 @@
+D:\enzod\meus\back c#\back CSharp\Switch.application\bin\Debug\netcoreapp3.1\Switch.application.deps.json
+D:\enzod\meus\back c#\back CSharp\Switch.application\bin\Debug\netcoreapp3.1\Switch.application.dll
+D:\enzod\meus\back c#\back CSharp\Switch.application\bin\Debug\netcoreapp3.1\Switch.application.pdb
+D:\enzod\meus\back c#\back CSharp\Switch.application\obj\Debug\netcoreapp3.1\Switch.application.GeneratedMSBuildEditorConfig.editorconfig
+D:\enzod\meus\back c#\back CSharp\Switch.application\obj\Debug\netcoreapp3.1\Switch.application.AssemblyInfoInputs.cache
+D:\enzod\meus\back c#\back CSharp\Switch.application\obj\Debug\netcoreapp3.1\Switch.application.AssemblyInfo.cs
+D:\enzod\meus\back c#\back CSharp\Switch.application\obj\Debug\netcoreapp3.1\Switch.application.csproj.CoreCompileInputs.cache
+D:\enzod\meus\back c#\back CSharp\Switch.application\obj\Debug\netcoreapp3.1\Switch.application.dll
+D:\enzod\meus\back c#\back CSharp\Switch.application\obj\Debug\netcoreapp3.1\Switch.application.pdb
+D:\enzod\meus\back c#\back CSharp\Switch.application\obj\Debug\netcoreapp3.1\Switch.application.csproj.AssemblyReference.cache
