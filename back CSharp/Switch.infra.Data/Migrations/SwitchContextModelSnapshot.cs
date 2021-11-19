@@ -17,6 +17,247 @@ namespace Switch.infra.Data.Migrations
                 .HasAnnotation("Relational:MaxIdentifierLength", 64)
                 .HasAnnotation("ProductVersion", "5.0.12");
 
+            modelBuilder.Entity("Switch.Domain.Entities.Amigo", b =>
+                {
+                    b.Property<int>("UsuarioId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("UsuarioAmigoId")
+                        .HasColumnType("int");
+
+                    b.HasKey("UsuarioId", "UsuarioAmigoId");
+
+                    b.HasIndex("UsuarioAmigoId");
+
+                    b.ToTable("Amigos");
+                });
+
+            modelBuilder.Entity("Switch.Domain.Entities.Comentario", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("DataPublicacao")
+                        .HasColumnType("datetime(6)");
+
+                    b.Property<int>("UsuarioId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("texto")
+                        .IsRequired()
+                        .HasMaxLength(600)
+                        .HasColumnType("varchar(600)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("UsuarioId");
+
+                    b.ToTable("Comentarios");
+                });
+
+            modelBuilder.Entity("Switch.Domain.Entities.Grupo", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    b.Property<string>("Nome")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("varchar(100)");
+
+                    b.Property<string>("UrlFoto")
+                        .IsRequired()
+                        .HasColumnType("longtext");
+
+                    b.Property<string>("descricao")
+                        .IsRequired()
+                        .HasMaxLength(400)
+                        .HasColumnType("varchar(400)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Grupos");
+                });
+
+            modelBuilder.Entity("Switch.Domain.Entities.Identificacao", b =>
+                {
+                    b.Property<int>("id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    b.Property<string>("Numero")
+                        .HasColumnType("longtext");
+
+                    b.Property<int>("TipoDocumento")
+                        .HasColumnType("int");
+
+                    b.Property<int>("UsuarioId")
+                        .HasColumnType("int");
+
+                    b.HasKey("id");
+
+                    b.HasIndex("UsuarioId")
+                        .IsUnique();
+
+                    b.ToTable("Identificacaos");
+                });
+
+            modelBuilder.Entity("Switch.Domain.Entities.InstituicaoEnsino", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    b.Property<DateTime?>("DataFormacao")
+                        .HasColumnType("datetime(6)");
+
+                    b.Property<int>("UsuarioId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("nome")
+                        .HasColumnType("longtext");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("UsuarioId");
+
+                    b.ToTable("InstituicaoEnsinos");
+                });
+
+            modelBuilder.Entity("Switch.Domain.Entities.LocalTrabalho", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("DataAdimissao")
+                        .HasColumnType("datetime(6)");
+
+                    b.Property<DateTime?>("DataSaida")
+                        .HasColumnType("datetime(6)");
+
+                    b.Property<bool>("EmpresaAtual")
+                        .HasColumnType("tinyint(1)");
+
+                    b.Property<string>("Nome")
+                        .HasColumnType("longtext");
+
+                    b.Property<int>("UsuarioId")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("UsuarioId");
+
+                    b.ToTable("LocalTrabalhos");
+                });
+
+            modelBuilder.Entity("Switch.Domain.Entities.Postagem", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("DataPublicacao")
+                        .HasColumnType("datetime(6)");
+
+                    b.Property<int>("GrupoId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Texto")
+                        .IsRequired()
+                        .HasMaxLength(400)
+                        .HasColumnType("varchar(400)");
+
+                    b.Property<string>("UrlConteudo")
+                        .HasColumnType("longtext");
+
+                    b.Property<int>("UsuarioId")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("GrupoId");
+
+                    b.HasIndex("UsuarioId");
+
+                    b.ToTable("Postagens");
+                });
+
+            modelBuilder.Entity("Switch.Domain.Entities.ProcurandoPor", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    b.Property<string>("Descricao")
+                        .HasColumnType("longtext");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("ProcurandoPors");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            Descricao = "NaoEspecificado"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            Descricao = "Namoro"
+                        },
+                        new
+                        {
+                            Id = 3,
+                            Descricao = "Amizade"
+                        },
+                        new
+                        {
+                            Id = 4,
+                            Descricao = "RelacionamentoSerio"
+                        });
+                });
+
+            modelBuilder.Entity("Switch.Domain.Entities.StatusRelacionamento", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    b.Property<string>("Descricao")
+                        .HasColumnType("longtext");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("StatusRelacionamento");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            Descricao = "NaoEspecificado"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            Descricao = "Solteiro"
+                        },
+                        new
+                        {
+                            Id = 3,
+                            Descricao = "Casado"
+                        },
+                        new
+                        {
+                            Id = 4,
+                            Descricao = "EmRelacionamentoSerio"
+                        });
+                });
+
             modelBuilder.Entity("Switch.Domain.Entities.Usuario", b =>
                 {
                     b.Property<int>("Id")
@@ -36,6 +277,9 @@ namespace Switch.infra.Data.Migrations
                         .HasMaxLength(400)
                         .HasColumnType("varchar(400)");
 
+                    b.Property<int?>("ProcurandoPorId")
+                        .HasColumnType("int");
+
                     b.Property<string>("Senha")
                         .IsRequired()
                         .HasMaxLength(400)
@@ -49,6 +293,9 @@ namespace Switch.infra.Data.Migrations
                         .HasMaxLength(400)
                         .HasColumnType("varchar(400)");
 
+                    b.Property<int?>("StatusRelacionamentoId")
+                        .HasColumnType("int");
+
                     b.Property<string>("UrlFoto")
                         .IsRequired()
                         .HasMaxLength(400)
@@ -56,7 +303,172 @@ namespace Switch.infra.Data.Migrations
 
                     b.HasKey("Id");
 
+                    b.HasIndex("ProcurandoPorId");
+
+                    b.HasIndex("StatusRelacionamentoId");
+
                     b.ToTable("usuarios");
+                });
+
+            modelBuilder.Entity("Switch.Domain.Entities.UsuarioGrupo", b =>
+                {
+                    b.Property<int>("UsuarioId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("GrupoId")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("DataCriacao")
+                        .HasColumnType("datetime(6)");
+
+                    b.Property<bool>("EhAdm")
+                        .HasColumnType("tinyint(1)");
+
+                    b.HasKey("UsuarioId", "GrupoId");
+
+                    b.HasIndex("GrupoId");
+
+                    b.ToTable("UsuarioGrupos");
+                });
+
+            modelBuilder.Entity("Switch.Domain.Entities.Amigo", b =>
+                {
+                    b.HasOne("Switch.Domain.Entities.Usuario", "UsuarioAmigo")
+                        .WithMany()
+                        .HasForeignKey("UsuarioAmigoId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("Switch.Domain.Entities.Usuario", "Usuario")
+                        .WithMany("Amigos")
+                        .HasForeignKey("UsuarioId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Usuario");
+
+                    b.Navigation("UsuarioAmigo");
+                });
+
+            modelBuilder.Entity("Switch.Domain.Entities.Comentario", b =>
+                {
+                    b.HasOne("Switch.Domain.Entities.Usuario", "Usuario")
+                        .WithMany("Comentarios")
+                        .HasForeignKey("UsuarioId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Usuario");
+                });
+
+            modelBuilder.Entity("Switch.Domain.Entities.Identificacao", b =>
+                {
+                    b.HasOne("Switch.Domain.Entities.Usuario", "Usuario")
+                        .WithOne("Indentificacao")
+                        .HasForeignKey("Switch.Domain.Entities.Identificacao", "UsuarioId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Usuario");
+                });
+
+            modelBuilder.Entity("Switch.Domain.Entities.InstituicaoEnsino", b =>
+                {
+                    b.HasOne("Switch.Domain.Entities.Usuario", "Usuario")
+                        .WithMany("InstituicaoEnsinos")
+                        .HasForeignKey("UsuarioId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Usuario");
+                });
+
+            modelBuilder.Entity("Switch.Domain.Entities.LocalTrabalho", b =>
+                {
+                    b.HasOne("Switch.Domain.Entities.Usuario", "Usuario")
+                        .WithMany("LocalTrabalhos")
+                        .HasForeignKey("UsuarioId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Usuario");
+                });
+
+            modelBuilder.Entity("Switch.Domain.Entities.Postagem", b =>
+                {
+                    b.HasOne("Switch.Domain.Entities.Grupo", "Grupo")
+                        .WithMany("postagens")
+                        .HasForeignKey("GrupoId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("Switch.Domain.Entities.Usuario", "Usuario")
+                        .WithMany("Postagens")
+                        .HasForeignKey("UsuarioId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Grupo");
+
+                    b.Navigation("Usuario");
+                });
+
+            modelBuilder.Entity("Switch.Domain.Entities.Usuario", b =>
+                {
+                    b.HasOne("Switch.Domain.Entities.ProcurandoPor", "ProcurandoPor")
+                        .WithMany()
+                        .HasForeignKey("ProcurandoPorId");
+
+                    b.HasOne("Switch.Domain.Entities.StatusRelacionamento", "StatusRelacionamento")
+                        .WithMany()
+                        .HasForeignKey("StatusRelacionamentoId");
+
+                    b.Navigation("ProcurandoPor");
+
+                    b.Navigation("StatusRelacionamento");
+                });
+
+            modelBuilder.Entity("Switch.Domain.Entities.UsuarioGrupo", b =>
+                {
+                    b.HasOne("Switch.Domain.Entities.Grupo", "Grupo")
+                        .WithMany("UsuarioGrupos")
+                        .HasForeignKey("GrupoId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("Switch.Domain.Entities.Usuario", "Usuario")
+                        .WithMany("UsuarioGrupos")
+                        .HasForeignKey("UsuarioId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Grupo");
+
+                    b.Navigation("Usuario");
+                });
+
+            modelBuilder.Entity("Switch.Domain.Entities.Grupo", b =>
+                {
+                    b.Navigation("postagens");
+
+                    b.Navigation("UsuarioGrupos");
+                });
+
+            modelBuilder.Entity("Switch.Domain.Entities.Usuario", b =>
+                {
+                    b.Navigation("Amigos");
+
+                    b.Navigation("Comentarios");
+
+                    b.Navigation("Indentificacao");
+
+                    b.Navigation("InstituicaoEnsinos");
+
+                    b.Navigation("LocalTrabalhos");
+
+                    b.Navigation("Postagens");
+
+                    b.Navigation("UsuarioGrupos");
                 });
 #pragma warning restore 612, 618
         }
