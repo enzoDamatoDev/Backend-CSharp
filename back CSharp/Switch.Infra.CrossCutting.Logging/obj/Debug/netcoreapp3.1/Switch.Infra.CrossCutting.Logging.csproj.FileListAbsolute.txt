@@ -1,0 +1,10 @@
+D:\enzod\meus\back c#\back CSharp\Switch.Infra.CrossCutting.Logging\bin\Debug\netcoreapp3.1\Switch.Infra.CrossCutting.Logging.deps.json
+D:\enzod\meus\back c#\back CSharp\Switch.Infra.CrossCutting.Logging\bin\Debug\netcoreapp3.1\Switch.Infra.CrossCutting.Logging.dll
+D:\enzod\meus\back c#\back CSharp\Switch.Infra.CrossCutting.Logging\bin\Debug\netcoreapp3.1\Switch.Infra.CrossCutting.Logging.pdb
+D:\enzod\meus\back c#\back CSharp\Switch.Infra.CrossCutting.Logging\obj\Debug\netcoreapp3.1\Switch.Infra.CrossCutting.Logging.csproj.AssemblyReference.cache
+D:\enzod\meus\back c#\back CSharp\Switch.Infra.CrossCutting.Logging\obj\Debug\netcoreapp3.1\Switch.Infra.CrossCutting.Logging.GeneratedMSBuildEditorConfig.editorconfig
+D:\enzod\meus\back c#\back CSharp\Switch.Infra.CrossCutting.Logging\obj\Debug\netcoreapp3.1\Switch.Infra.CrossCutting.Logging.AssemblyInfoInputs.cache
+D:\enzod\meus\back c#\back CSharp\Switch.Infra.CrossCutting.Logging\obj\Debug\netcoreapp3.1\Switch.Infra.CrossCutting.Logging.AssemblyInfo.cs
+D:\enzod\meus\back c#\back CSharp\Switch.Infra.CrossCutting.Logging\obj\Debug\netcoreapp3.1\Switch.Infra.CrossCutting.Logging.csproj.CoreCompileInputs.cache
+D:\enzod\meus\back c#\back CSharp\Switch.Infra.CrossCutting.Logging\obj\Debug\netcoreapp3.1\Switch.Infra.CrossCutting.Logging.dll
+D:\enzod\meus\back c#\back CSharp\Switch.Infra.CrossCutting.Logging\obj\Debug\netcoreapp3.1\Switch.Infra.CrossCutting.Logging.pdb

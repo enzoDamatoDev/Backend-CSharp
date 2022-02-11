@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "leTCVYHhwjg19R+DUSsFT9zEmKdRA125wBkQVFjbuZU00izwk7KKyEZg/g3hp6C2BMaBC/gb8i9tAQYElI4iaA==",
+  "success": true,
+  "projectFilePath": "D:\\enzod\\meus\\back c#\\back CSharp\\Switch.Infra.CrossCutting.Logging\\Switch.Infra.CrossCutting.Logging.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\enzod\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\6.0.0\\microsoft.extensions.logging.abstractions.6.0.0.nupkg.sha512",
+    "C:\\Users\\enzod\\.nuget\\packages\\system.buffers\\4.5.1\\system.buffers.4.5.1.nupkg.sha512",
+    "C:\\Users\\enzod\\.nuget\\packages\\system.memory\\4.5.4\\system.memory.4.5.4.nupkg.sha512"
+  ],
+  "logs": []
+}
