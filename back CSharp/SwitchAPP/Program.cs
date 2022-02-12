@@ -20,12 +20,12 @@ namespace SwitchAPP
                 return new Usuario()
                 {
                     Nome = nome,
-                    Sobrenome = sobrenome,
-                    Email = email,
-                    Senha = senha,
-                    DataNascimento = DateTime.Now,
-                    Sexo = Switch.Domain.Enum.SexoEnum.Masculino,
-                    UrlFoto = @"D:\enzod\downloadJogos\loli\jij"
+                    //Sobrenome = sobrenome,
+                    //Email = email,
+                    //Senha = senha,
+                    //DataNascimento = DateTime.Now,
+                    //Sexo = Switch.Domain.Enum.SexoEnum.Masculino,
+                    //UrlFoto = @"D:\enzod\downloadJogos\loli\jij"
                 };
             }
 
@@ -48,13 +48,19 @@ namespace SwitchAPP
                 {
                     dbcontext.GetService<ILoggerFactory>().AddProvider(new Logger());
 
-                    //var resultado = dbcontext.usuarios.ToList();
-                    var resultado = dbcontext.usuarios.Where(u => u.Nome.Equals("enzo")).ToList();
+                    /////  PEGAR DA BASE
+                    var resultado = dbcontext.usuarios.ToList();
+                    //var resultado = dbcontext.usuarios.Where(u => u.Nome.Equals("enzo")).ToList();
 
+                    /////   ADICIONAR VARIOS
                     //dbcontext.usuarios.AddRange(users);
                     //dbcontext.SaveChanges();
+
+                    /////   ADICIONAR UM
                     //dbcontext.usuarios.Add(usuario);
                     //dbcontext.SaveChanges();
+
+
                     foreach (Usuario user in resultado){
                         Console.WriteLine(user.Id.ToString()+ " "+ user.DataNascimento);
                     }
