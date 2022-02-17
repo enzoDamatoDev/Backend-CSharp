@@ -20,22 +20,14 @@ namespace SwitchAPP
                 return new Usuario()
                 {
                     Nome = nome,
-                    //Sobrenome = sobrenome,
-                    //Email = email,
-                    //Senha = senha,
-                    //DataNascimento = DateTime.Now,
-                    //Sexo = Switch.Domain.Enum.SexoEnum.Masculino,
-                    //UrlFoto = @"D:\enzod\downloadJogos\loli\jij"
+                    Sobrenome = sobrenome,
+                    Email = email,
+                    Senha = senha,
+                    DataNascimento = DateTime.Now,
+                    Sexo = Switch.Domain.Enum.SexoEnum.Masculino,
+                    UrlFoto = @"D:\enzod\downloadJogos\loli\jij"
                 };
             }
-
-            Usuario user1 = CriarUser("enzo", "damis", "enzo@out", "lembra");
-            Usuario user2 = CriarUser("luan", "damis", "luan@out", "lembra");
-            Usuario user3 = CriarUser("paipa", "damis", "paipa@out", "lembra");
-            Usuario user4 = CriarUser("dani", "damis", "dani@out", "lembra");
-            Usuario user5 = CriarUser("bamba", "damis", "bamba@out", "lembra");
-
-            List<Usuario> users = new List<Usuario>() { user1, user2, user3, user4, user5 };
 
             var optionsBuilder = new DbContextOptionsBuilder<SwitchContext>();
             optionsBuilder.UseLazyLoadingProxies();
@@ -46,24 +38,36 @@ namespace SwitchAPP
             {
                 using (var dbcontext = new SwitchContext(optionsBuilder.Options))
                 {
+                    /////escrever log mo terminal
                     dbcontext.GetService<ILoggerFactory>().AddProvider(new Logger());
 
-                    /////  PEGAR DA BASE
-                    var resultado = dbcontext.usuarios.ToList();
-                    //var resultado = dbcontext.usuarios.Where(u => u.Nome.Equals("enzo")).ToList();
 
                     /////   ADICIONAR VARIOS
                     //dbcontext.usuarios.AddRange(users);
                     //dbcontext.SaveChanges();
 
                     /////   ADICIONAR UM
+
+                    //var usuario = CriarUser("malu", "ferreira", "maluzita@", "damamor");
+                    //usuario.InstituicaoEnsinos.Add(new InstituicaoEnsino() { nome = "mack"});
+                    //usuario.Indentificacao = new Identificacao() { Numero = "356513" };
                     //dbcontext.usuarios.Add(usuario);
                     //dbcontext.SaveChanges();
 
 
-                    foreach (Usuario user in resultado){
-                        Console.WriteLine(user.Id.ToString()+ " "+ user.DataNascimento);
-                    }
+                    /////  PEGAR DA BASE
+                    //var resultado = dbcontext.usuarios.ToList();
+
+
+                    var resultado = dbcontext.usuarios.FirstOrDefault(u => u.Nome.Equals("malu"));
+                    var inst = resultado.InstituicaoEnsinos.FirstOrDefault(i => i.nome.Equals("mack"));
+                    inst.DataFormacao = DateTime.Now;
+                    dbcontext.SaveChanges();
+
+
+                    //foreach (Usuario user in resultado){
+                    //    Console.WriteLine(user.Id.ToString()+ " "+ user.Senha);
+                    //}
                 }
             }
             catch(Exception e)
