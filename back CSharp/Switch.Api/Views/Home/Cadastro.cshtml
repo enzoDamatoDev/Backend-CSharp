@@ -1,0 +1,37 @@
+﻿@model Switch.Api.Models.CadastroViewModel
+@{
+    ViewData["Title"] = "Cadastrar";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Complete os campos</h1>
+    <form method="post">
+        <div>
+            <label for="txtNome">Nome</label><br>
+            <input type="text" name="Nome" id="txtNome">
+        </div>
+
+        <div>
+            <label for="txtEmail">Email</label><br>
+            <input type="text" name="Email" id="txtEmail">
+        </div>
+        <div>
+            <input type="radio" name="Carro" id="rdCarroSim" value="true">
+            <label for="rdCarroSim">Vou dirigindo</label><br>
+        </div>
+        <div>
+            <input type="radio" name="Carro" id="rdCarroNao" value="false">
+            <label for="rdCarroNao">Vou andando</label><br>
+        </div>
+        <div>
+            <input type="radio" name="Acompanhado" id="rdAcompanhadoSim" value="true">
+            <label for="rdAcompanhadoSim">Vou Acompanhado</label><br>
+        </div>
+        <div>
+            <input type="radio" name="Acompanhado" id="rdAcompanhadooNao" value="false">
+            <label for="rdAcompanhadooNao">Vou sozinho :(</label><br>
+        </div>
+
+        <input type="submit" value="Enviar Resposta" />
+    </form>
+</div>

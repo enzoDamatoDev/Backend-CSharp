@@ -7,7 +7,6 @@ namespace Switch.Domain.Entities
     public class UsuarioGrupo
     {
         public DateTime DataCriacao { get; set; }
-        public bool EhAdm { get; set; }
         public int UsuarioId { get; set; }
         public virtual Usuario Usuario { get; set; }
         public int GrupoId { get; set; }

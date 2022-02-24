@@ -12,8 +12,7 @@ namespace Switch.infra.Data.Config
         public void Configure(EntityTypeBuilder<UsuarioGrupo> builder)
         {
             builder.HasKey(u => new { u.UsuarioId, u.GrupoId });
-            builder.Property(u => u.DataCriacao).IsRequired();
-            builder.Property(u => u.EhAdm);
+            builder.Property(u => u.DataCriacao);
           
         }
     }

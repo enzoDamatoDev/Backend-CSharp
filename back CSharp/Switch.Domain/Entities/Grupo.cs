@@ -11,7 +11,7 @@ namespace Switch.Domain.Entities
         public string descricao { get; set; }
         public string UrlFoto { get; set; }
         public virtual ICollection<Postagem> postagens {get; set;}
-        public virtual ICollection<UsuarioGrupo> UsuarioGrupos { get; set; }
+        public virtual ICollection<UsuarioGrupo> UsuarioGrupo { get; set; }
 
     }
 }

@@ -59,15 +59,14 @@ namespace SwitchAPP
                     //var resultado = dbcontext.usuarios.ToList();
 
 
-                    var resultado = dbcontext.usuarios.FirstOrDefault(u => u.Nome.Equals("malu"));
-                    var inst = resultado.InstituicaoEnsinos.FirstOrDefault(i => i.nome.Equals("mack"));
-                    inst.DataFormacao = DateTime.Now;
-                    dbcontext.SaveChanges();
+                    var usu = dbcontext.usuarios.ToList();//FirstOrDefault(u => u.Id.Equals(1));
+                    //dbcontext.SaveChanges();
 
 
-                    //foreach (Usuario user in resultado){
-                    //    Console.WriteLine(user.Id.ToString()+ " "+ user.Senha);
-                    //}
+                    foreach (Usuario user in usu){
+                        var grupo = user.UsuarioGrupo.FirstOrDefault(g => g.Grupo.Id.Equals(8));
+                        Console.WriteLine(user.Nome+ " "+ grupo.GrupoId+" "+grupo.UsuarioId);
+                    }
                 }
             }
             catch(Exception e)

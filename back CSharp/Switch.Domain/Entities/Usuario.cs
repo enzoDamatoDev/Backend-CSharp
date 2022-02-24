@@ -19,7 +19,7 @@ namespace Switch.Domain.Entities
         public virtual StatusRelacionamento StatusRelacionamento { get; set; }
         public virtual ProcurandoPor ProcurandoPor { get; set; }
         public virtual ICollection<Postagem> Postagens { get; set; }
-        public virtual ICollection<UsuarioGrupo> UsuarioGrupos { get; set; }
+        public virtual ICollection<UsuarioGrupo> UsuarioGrupo { get; set; }
         public virtual ICollection<LocalTrabalho> LocalTrabalhos { get; set; }
         public virtual ICollection<InstituicaoEnsino> InstituicaoEnsinos { get; set; }
         public virtual ICollection<Amigo> Amigos { get; set; }
@@ -28,7 +28,7 @@ namespace Switch.Domain.Entities
         public Usuario()
         {
             Postagens = new List<Postagem>();
-            UsuarioGrupos = new List<UsuarioGrupo>();
+            UsuarioGrupo = new List<UsuarioGrupo>();
             LocalTrabalhos = new List<LocalTrabalho>();
             InstituicaoEnsinos = new List<InstituicaoEnsino>();
             Amigos = new List<Amigo>();

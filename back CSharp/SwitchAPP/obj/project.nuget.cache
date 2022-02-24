@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "6onwsvA8AgZg8t5dqkMAb0zvtPZIcjBdDk7sV6Hi5ykPLbKwY+xnLWYpWLToJer0G+WtFpOxi5F+7vxqsC5ATw==",
+  "dgSpecHash": "3Dk+bVHyzJ7QegeCIdO2Vo+aa1D0vUl0uT4BXD+4A3inz7kMknCJXI7xHL9WcA2QPv6L3ybwrZsNfuixkw/Ysg==",
   "success": true,
   "projectFilePath": "D:\\enzod\\meus\\back c#\\back CSharp\\SwitchAPP\\SwitchAPP.csproj",
   "expectedPackageFiles": [
@@ -123,7 +123,8 @@
     "C:\\Users\\enzod\\.nuget\\packages\\system.windows.extensions\\4.7.0\\system.windows.extensions.4.7.0.nupkg.sha512",
     "C:\\Users\\enzod\\.nuget\\packages\\system.xml.readerwriter\\4.3.0\\system.xml.readerwriter.4.3.0.nupkg.sha512",
     "C:\\Users\\enzod\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512",
-    "C:\\Users\\enzod\\.nuget\\packages\\system.xml.xmldocument\\4.3.0\\system.xml.xmldocument.4.3.0.nupkg.sha512"
+    "C:\\Users\\enzod\\.nuget\\packages\\system.xml.xmldocument\\4.3.0\\system.xml.xmldocument.4.3.0.nupkg.sha512",
+    "C:\\Users\\enzod\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.22\\microsoft.netcore.app.host.win-x64.3.1.22.nupkg.sha512"
   ],
   "logs": []
 }
