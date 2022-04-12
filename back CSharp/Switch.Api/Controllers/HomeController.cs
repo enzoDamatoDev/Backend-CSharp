@@ -35,8 +35,19 @@ namespace Switch.Api.Controllers
         [HttpPost]
         public IActionResult Cadastro(CadastroViewModel resp)
         {
-            Repositorio.AdicionarResposta(resp);
-            return Content("Nome: "+resp.Nome+"\nEmail: "+resp.Email+"\ncarro: "+resp.Carro+"\nacompanhado: "+resp.Acompanhado);
+            if (ModelState.IsValid)
+            {
+                Repositorio.AdicionarResposta(resp);
+                return View("Salvo");
+            }
+            else
+            {
+                return View(resp);
+            }
+        }
+        public IActionResult Lista()
+        {
+            return View(Repositorio.Respostas);
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

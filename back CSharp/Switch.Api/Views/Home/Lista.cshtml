@@ -1,0 +1,17 @@
+﻿@model IEnumerable<CadastroViewModel>
+@{
+    ViewData["Title"] = "Cadastrar";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Lista dos inscritos:</h1>
+    <ol>
+    @foreach(CadastroViewModel candidato in Repositorio.Respostas)
+            {
+                <li>@(candidato.Nome), acompanhado: @(candidato.Acompanhado? "sim":"nao"), dirigindo: @(candidato.Carro ? "sim" : "nao")</li>
+            }
+    </ol>
+    <p>
+        <a asp-action="Index">voltar ao inicio</a>
+    </p>
+</div>

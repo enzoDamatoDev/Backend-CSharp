@@ -1,34 +1,36 @@
 ﻿@model Switch.Api.Models.CadastroViewModel
 @{
     ViewData["Title"] = "Cadastrar";
+    ViewData["Style"] = "estilos.css";
 }
 
 <div class="text-center">
     <h1 class="display-4">Complete os campos</h1>
+    <div asp-validation-summary="All"></div>
     <form method="post">
         <div>
-            <label for="txtNome">Nome</label><br>
-            <input type="text" name="Nome" id="txtNome">
+            <label asp-for="Nome">Nome</label><br>
+            <input asp-for="Nome">
         </div>
 
         <div>
-            <label for="txtEmail">Email</label><br>
-            <input type="text" name="Email" id="txtEmail">
+            <label asp-for="Email">Email</label><br>
+            <input asp-for="Email">
         </div>
         <div>
-            <input type="radio" name="Carro" id="rdCarroSim" value="true">
+            <input type="radio" asp-for="Carro" id="rdCarroSim" value="true">
             <label for="rdCarroSim">Vou dirigindo</label><br>
         </div>
         <div>
-            <input type="radio" name="Carro" id="rdCarroNao" value="false">
+            <input type="radio" asp-for="Carro" id="rdCarroNao" value="false">
             <label for="rdCarroNao">Vou andando</label><br>
         </div>
         <div>
-            <input type="radio" name="Acompanhado" id="rdAcompanhadoSim" value="true">
+            <input type="radio" asp-for="Acompanhado" id="rdAcompanhadoSim" value="true">
             <label for="rdAcompanhadoSim">Vou Acompanhado</label><br>
         </div>
         <div>
-            <input type="radio" name="Acompanhado" id="rdAcompanhadooNao" value="false">
+            <input type="radio" asp-for="Acompanhado" id="rdAcompanhadooNao" value="false">
             <label for="rdAcompanhadooNao">Vou sozinho :(</label><br>
         </div>
 

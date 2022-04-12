@@ -37,3 +37,6 @@ D:\enzod\meus\back c#\back CSharp\Switch.Api\obj\Debug\net5.0\Switch.Api.pdb
 D:\enzod\meus\back c#\back CSharp\Switch.Api\obj\Debug\net5.0\Switch.Api.genruntimeconfig.cache
 D:\enzod\meus\back c#\back CSharp\Switch.Api\obj\Debug\net5.0\Switch.Api.csproj.CopyComplete
 D:\enzod\meus\back c#\back CSharp\Switch.Api\obj\Debug\net5.0\Razor\Views\Home\Cadastro.cshtml.g.cs
+D:\enzod\meus\back c#\back CSharp\Switch.Api\obj\Debug\net5.0\Switch.Api.csproj.AssemblyReference.cache
+D:\enzod\meus\back c#\back CSharp\Switch.Api\obj\Debug\net5.0\Razor\Views\Home\Salvo.cshtml.g.cs
+D:\enzod\meus\back c#\back CSharp\Switch.Api\obj\Debug\net5.0\Razor\Views\Home\Lista.cshtml.g.cs
