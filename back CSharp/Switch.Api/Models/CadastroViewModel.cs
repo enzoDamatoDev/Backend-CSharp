@@ -4,6 +4,7 @@ namespace Switch.Api.Models
 {
     public class CadastroViewModel
     {
+        public int id { get; set; }
         [Required(ErrorMessage ="voce n tem nome?")]
         public string Nome { get; set; }
         [Required(ErrorMessage = "voce n tem email?")]
@@ -13,5 +14,7 @@ namespace Switch.Api.Models
         public bool Carro { get; set; }
         [Required]
         public bool Acompanhado { get; set; }
+
     }
+   
 }

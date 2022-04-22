@@ -5,3 +5,19 @@
     font-weight:bold;
     color:red;
 }
+.lista tr th{
+    font-weight:bold;
+}
+.lista{
+    align-content: center;
+    width:90vw;
+    margin-bottom:30px;
+    border: dashed;
+
+}
+
+.bot, .bot a{
+    color: black;
+    font-weight:bold;
+    background: rgb(198 85 85);
+}

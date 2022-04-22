@@ -4,4 +4,13 @@
     <TargetFramework>net5.0</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Content Remove="Views\Home\_Index.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\imgs\fundo1.jpg" />
+    <None Include="wwwroot\imgs\logo.png" />
+  </ItemGroup>
+
 </Project>

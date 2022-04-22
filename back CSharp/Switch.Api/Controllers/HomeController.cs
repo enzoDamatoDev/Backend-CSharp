@@ -28,8 +28,14 @@ namespace Switch.Api.Controllers
             return View();
         }
         [HttpGet]
-        public IActionResult Cadastro()
+        public IActionResult Cadastro(int? id)
         {
+            if (id.HasValue)
+            {
+                CadastroViewModel p = Repositorio.Respostas.First(u=>u.id == id);
+                return View(p);
+            }
+
             return View();
         }
         [HttpPost]
@@ -48,6 +54,12 @@ namespace Switch.Api.Controllers
         public IActionResult Lista()
         {
             return View(Repositorio.Respostas);
+        }
+
+        public IActionResult Remover(int id)
+        {
+            Repositorio.remover(id);
+            return View("Salvo");
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

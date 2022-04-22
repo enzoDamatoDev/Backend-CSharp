@@ -1,15 +1,17 @@
 ﻿@model int?
 @{
     ViewData["Title"] = "Home Page";
+    ViewData["Style"] = "estilos.css";
 }
 
 <div class="text-center">
     <h1 class="display-4">Salve</h1>
     <p>Learn about @Model.HasValue.</p>
     <h4><a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Cadastro">Quero fazer cadastro</a></h4>
+    <h4><a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Lista">Ver lista</a></h4>
     <hr>
     <table border="1" align="center">
-        <caption >Locais</caption>
+        <caption>Locais</caption>
         <thead>
             <tr>
                 <th>

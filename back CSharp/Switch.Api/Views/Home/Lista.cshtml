@@ -1,16 +1,37 @@
 ﻿@model IEnumerable<CadastroViewModel>
 @{
     ViewData["Title"] = "Cadastrar";
+    ViewData["Style"] = "estilos.css";
 }
 
 <div class="text-center">
     <h1 class="display-4">Lista dos inscritos:</h1>
-    <ol>
-    @foreach(CadastroViewModel candidato in Repositorio.Respostas)
+    <hr>
+    <table class="lista" border="1">
+        <thead>
+            <tr>
+                <th>nome</th>
+                <th>email</th>
+                <th>carro</th>
+                <th>comp</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (CadastroViewModel candidato in Repositorio.Respostas)
             {
-                <li>@(candidato.Nome), acompanhado: @(candidato.Acompanhado? "sim":"nao"), dirigindo: @(candidato.Carro ? "sim" : "nao")</li>
+            <tr>
+                <td>@(candidato.Nome)</td>
+                <td>@(candidato.Email)</td>
+                <td>@(candidato.Acompanhado? "sim":"nao")</td>
+                <td>@(candidato.Carro ? "sim" : "nao")</td>
+                <td class="bot" id="alt"><a asp-action="Cadastro" asp-route-id="@(candidato.id)" asp-controller="Home">alterar</a></td>
+                <td class="bot" id="del"><a asp-action="Remover" asp-controller="Home" asp-route-id="@(candidato.id)">remover</a></td>
+                <td>@(candidato.id)</td>
+
+            </tr>
             }
-    </ol>
+        </tbody>
+    </table>
     <p>
         <a asp-action="Index">voltar ao inicio</a>
     </p>
