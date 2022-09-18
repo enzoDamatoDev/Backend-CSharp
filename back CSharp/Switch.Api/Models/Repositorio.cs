@@ -34,16 +34,14 @@ namespace Switch.Api.Models
             Repositorio.respostas.Add(new CadastroViewModel { id = tam++, Nome ="kinha", Email="kinha@godoy",Carro=true,Acompanhado=false });
         }
 
-        public static void remover(int item)
+        public static bool remover(int item)
         {
-            foreach(CadastroViewModel c in respostas)
+            var user = respostas.Find(u => u.id == item);
+            if(user != null)
             {
-                if(item == c.id)
-                {
-                    respostas.Remove(c);
-                    return;
-                }
+                return respostas.Remove(user);
             }
+            return false;
         }
     }
 }

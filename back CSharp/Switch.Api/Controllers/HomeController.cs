@@ -58,7 +58,7 @@ namespace Switch.Api.Controllers
 
         public IActionResult Remover(int id)
         {
-            Repositorio.remover(id);
+            TempData["excluiu"]=Repositorio.remover(id);
             return View("Salvo");
         }
 

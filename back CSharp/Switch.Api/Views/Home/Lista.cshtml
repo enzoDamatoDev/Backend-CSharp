@@ -22,8 +22,8 @@
             <tr>
                 <td>@(candidato.Nome)</td>
                 <td>@(candidato.Email)</td>
-                <td>@(candidato.Acompanhado? "sim":"nao")</td>
                 <td>@(candidato.Carro ? "sim" : "nao")</td>
+                <td>@(candidato.Acompanhado? "sim":"nao")</td>
                 <td class="bot" id="alt"><a asp-action="Cadastro" asp-route-id="@(candidato.id)" asp-controller="Home">alterar</a></td>
                 <td class="bot" id="del"><a asp-action="Remover" asp-controller="Home" asp-route-id="@(candidato.id)">remover</a></td>
                 <td>@(candidato.id)</td>

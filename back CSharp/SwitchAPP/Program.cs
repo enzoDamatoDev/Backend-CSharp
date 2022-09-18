@@ -48,11 +48,12 @@ namespace SwitchAPP
 
                     /////   ADICIONAR UM
 
-                    //var usuario = CriarUser("malu", "ferreira", "maluzita@", "damamor");
-                    //usuario.InstituicaoEnsinos.Add(new InstituicaoEnsino() { nome = "mack"});
-                    //usuario.Indentificacao = new Identificacao() { Numero = "356513" };
-                    //dbcontext.usuarios.Add(usuario);
-                    //dbcontext.SaveChanges();
+                    var usuario = CriarUser("sdd", "dela", "s@", "ef");
+                    var inst = dbcontext.InstituicaoEnsinos.FirstOrDefault(i => i.nome.Equals("mack"));
+                    usuario.InstituicaoEnsinos.Add(inst/*new InstituicaoEnsino() { nome = "mack"}*/);
+                    usuario.Indentificacao = new Identificacao() { Numero = "356513" };
+                    dbcontext.usuarios.Add(usuario);
+                    dbcontext.SaveChanges();
 
 
                     /////  PEGAR DA BASE
