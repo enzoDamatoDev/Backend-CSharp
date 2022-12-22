@@ -1,0 +1,6 @@
+D:\enzod\meus\back c#\back CSharp\Swich.Application\obj\Debug\net5.0\Swich.Application.csproj.AssemblyReference.cache
+D:\enzod\meus\back c#\back CSharp\Swich.Application\obj\Debug\net5.0\Swich.Application.GeneratedMSBuildEditorConfig.editorconfig
+D:\enzod\meus\back c#\back CSharp\Swich.Application\obj\Debug\net5.0\Swich.Application.AssemblyInfoInputs.cache
+D:\enzod\meus\back c#\back CSharp\Swich.Application\obj\Debug\net5.0\Swich.Application.AssemblyInfo.cs
+D:\enzod\meus\back c#\back CSharp\Swich.Application\obj\Debug\net5.0\Swich.Application.csproj.CoreCompileInputs.cache
+D:\enzod\meus\back c#\back CSharp\Swich.Application\obj\Debug\net5.0\Swich.Application.MvcApplicationPartsAssemblyInfo.cache

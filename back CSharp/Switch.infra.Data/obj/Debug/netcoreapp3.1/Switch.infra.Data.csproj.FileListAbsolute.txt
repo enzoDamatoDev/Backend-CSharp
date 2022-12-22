@@ -15,10 +15,4 @@ D:\enzod\meus\back c#\back CSharp\Switch.infra.Data\obj\Debug\netcoreapp3.1\Swit
 D:\enzod\meus\back c#\back CSharp\Switch.infra.Data\obj\Debug\netcoreapp3.1\Switch.infra.Data.pdb
 D:\enzod\meus\back c#\back CSharp\Switch.infra.Data\obj\Debug\netcoreapp3.1\Switch.infra.Data.genruntimeconfig.cache
 D:\enzod\meus\back c#\back CSharp\Switch.infra.Data\bin\Debug\netcoreapp3.1\Config\UsuarioConfiguration.cs
-D:\enzod\meus\back c#\back CSharp\Switch.infra.Data\bin\Debug\netcoreapp3.1\Config\GrupoConfiguration.cs
-D:\enzod\meus\back c#\back CSharp\Switch.infra.Data\bin\Debug\netcoreapp3.1\Config\UsuarioGrupoConfiguration.cs
-D:\enzod\meus\back c#\back CSharp\Switch.infra.Data\bin\Debug\netcoreapp3.1\Config\AmigoConfiguration.cs
-D:\enzod\meus\back c#\back CSharp\Switch.infra.Data\bin\Debug\netcoreapp3.1\Config\ComentarioConfiguration.cs
 D:\enzod\meus\back c#\back CSharp\Switch.infra.Data\bin\Debug\netcoreapp3.1\Config\PostagemConfiguration.cs
-D:\enzod\meus\back c#\back CSharp\Switch.infra.Data\bin\Debug\netcoreapp3.1\Config\ProcurandoPorConfiguration.cs
-D:\enzod\meus\back c#\back CSharp\Switch.infra.Data\bin\Debug\netcoreapp3.1\Config\StatusRelacionamentoConfiguration.cs

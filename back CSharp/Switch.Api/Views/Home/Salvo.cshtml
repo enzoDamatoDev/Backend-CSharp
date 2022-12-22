@@ -5,6 +5,7 @@
 @if (!TempData.ContainsKey("excluiu"))
 {
     <div class="text-center">
+        <partial name="_Alert" model="@("deu certo!")" />
         <h1 class="display-4">Obrigado pela colaboração</h1>
         <h6>sua inscrição foi salva, te esperamos lá</h6>
         <p>
@@ -18,16 +19,20 @@ else
     <div class="text-center">
         @if (excluiu)
         {
-        <h1 class="display-4">Excluido com sucesso</h1>
-        <h6>Sua presença fará falta</h6>
+            <h1 class="display-4">Excluido com sucesso</h1>
+            <h6>Sua presença fará falta</h6>
         }
         else
         {
-        <h1 class="display-4">Erro na exclusao</h1>
-        <h6>Parece que você vai ter que ir</h6>
+            <h1 class="display-4">Erro na exclusao</h1>
+            <h6>Parece que você vai ter que ir</h6>
         }
         <p>
             <a asp-action="Index">voltar ao inicio</a>  ou <a asp-action="Lista">ver lista</a>
         </p>
     </div>
+}
+
+@section Scripts{
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 }

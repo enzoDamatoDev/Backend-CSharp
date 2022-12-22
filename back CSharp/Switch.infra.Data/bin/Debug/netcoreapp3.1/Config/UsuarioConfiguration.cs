@@ -24,10 +24,6 @@ namespace Switch.infra.Data.Config
                 .HasForeignKey<Identificacao>(i => i.UsuarioId);
             builder.HasMany(u => u.Postagens)
                 .WithOne(p => p.Usuario);
-            builder.HasMany(u => u.Comentarios)
-                .WithOne(p => p.Usuario);
-            builder.HasMany(u => u.Amigos)
-                .WithOne(p => p.Usuario);
         }
     }
 }
